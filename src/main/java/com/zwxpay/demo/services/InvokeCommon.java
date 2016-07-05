@@ -1,17 +1,18 @@
-package com.zwxpay.demo.helper;
+package com.zwxpay.demo.services;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import com.zwxpay.demo.helper.Libs;
+import com.zwxpay.demo.helper.Tuple;
 import com.zwxpay.demo.payment.ScanCodePay;
 import org.apache.log4j.Logger;
 
 import java.lang.reflect.Method;
-import java.util.List;
 import java.util.Map;
 
 /**
  * Created by zhangmeng on 16-7-4.
+ * 进行调用的服务类
  */
 public class InvokeCommon {
 
@@ -20,6 +21,8 @@ public class InvokeCommon {
 
     Map<String, Tuple> services = Maps.newConcurrentMap();
 
+
+    //将所有服务初始化,反射调用
     private InvokeCommon(){
         ScanCodePay single = new ScanCodePay();
         try{
@@ -39,12 +42,15 @@ public class InvokeCommon {
     public void registerService(String key, Method m, Object obj){
         services.put(key, new Tuple(m, obj));
     }
+
+
+    //服务调用
     public JsonNode invokeByMethod(String key, JsonNode params){
-        JsonNode postPara = Libs.buildData(params);
+        JsonNode postPara = Libs.buildData(params); //组装完整数据
         Tuple tuple = services.get(key);
         Method method = (Method) tuple._1();
         try{
-            Object invoke = method.invoke(tuple._2(), postPara);
+            Object invoke = method.invoke(tuple._2(), postPara); //进行对应业务逻辑调用
             return (JsonNode)invoke;
         }catch(Exception e){
             throw new RuntimeException(e);

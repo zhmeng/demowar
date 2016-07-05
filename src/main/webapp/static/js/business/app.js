@@ -1,6 +1,7 @@
 /**
  * Created by wjr on 16-7-4.
  */
+/** 实现单页面跳转业务逻辑 */
 define(['backbone'], function(Backbone){
     var app = {
         currentView: null,

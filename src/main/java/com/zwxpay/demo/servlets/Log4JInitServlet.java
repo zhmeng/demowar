@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.PropertyConfigurator;
 
+//日志servlet
 public class Log4JInitServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;

@@ -19,6 +19,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+//资源Servlet对资源进行处理
 public class StaticServlet extends HttpServlet {
     public static class ServletUtils {
         public static <T> T coalesce(T...ts) {

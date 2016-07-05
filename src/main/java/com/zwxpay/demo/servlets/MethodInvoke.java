@@ -3,8 +3,7 @@ package com.zwxpay.demo.servlets;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Maps;
-import com.zwxpay.demo.helper.HttpClient;
-import com.zwxpay.demo.helper.InvokeCommon;
+import com.zwxpay.demo.services.InvokeCommon;
 import com.zwxpay.demo.helper.JsonHelper;
 import org.apache.log4j.Logger;
 
@@ -20,6 +19,7 @@ import java.util.Map;
 
 /**
  * Created by zhangmeng on 16-7-4.
+ * 进行方法服务调用
  */
 public class MethodInvoke extends HttpServlet {
     private Logger logger = Logger.getLogger(MethodInvoke.class);

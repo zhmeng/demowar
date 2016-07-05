@@ -2,6 +2,7 @@ package com.zwxpay.demo.helper;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.google.common.collect.Maps;
+import com.zwxpay.demo.conf.CommonD;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,6 +13,8 @@ import java.util.Random;
  * Created by zhangmeng on 16-7-5.
  */
 public class Libs {
+
+    //组装数据
     public static JsonNode buildData(JsonNode jn){
         Map<String, Object> map = JsonHelper.fromJson(jn, Map.class);
         map.put("mch_id", CommonD.MCH_ID.getValue());
@@ -20,6 +23,7 @@ public class Libs {
         return JsonHelper.toJson(map);
     }
 
+    //获取随机数
     public static String getRandomStringByLength(int length) {
         String base = "abcdefghijklmnopqrstuvwxyz0123456789";
         Random random = new Random();
@@ -31,6 +35,7 @@ public class Libs {
         return sb.toString();
     }
 
+    //签名
     public static String getSign(Map<String,Object> map){
         ArrayList<String> list = new ArrayList<String>();
         for(Map.Entry<String,Object> entry:map.entrySet()){
