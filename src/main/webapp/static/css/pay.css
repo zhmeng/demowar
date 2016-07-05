@@ -1,5 +1,5 @@
 html, body {height: 100%;}
-#pay_platform {height:auto; min-height: 100% }
+#pay_platform {height:auto; min-height: 100%;  margin-bottom: 5em;}
 html { font-size:13px;}
 
 body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0;}
@@ -24,12 +24,12 @@ table{border-collapse:collapse;border-spacing:0;}
 .red{color:#ff0000;}
 
 /*按钮样式及点击时的效果*/
-.btn{position:relative;display:block;text-align:center;border:1px solid red;cursor:pointer;}
+.btn{position:relative;display:block;text-align:center;cursor:pointer;}
 .btn.touched{}
 .btn_blue{display:inline-block;padding:0 20px;height:40px;line-height:40px;background:#2284D8;letter-spacing:2px;color:#ffffff;}
 
 /*头部*/
-.wrap{width:1025px;margin:0 auto;overflow:hidden;zoom:1;}
+.wrap{width:100%;margin:0 auto;overflow:hidden;zoom:1;}
 .container{margin:25px auto;}
 .header{position:relative; z-index:9;background-color:#fff;border-top:3px solid #44b549;border-bottom:1px solid #d9dadc;}
 .header .wrap{height:56px;position:relative;overflow:visible; z-index:10}
@@ -92,7 +92,7 @@ table{border-collapse:collapse;border-spacing:0;}
 .form_wrap .addr_sele>span .ico_tri:after{content:"";height: 8px;width: 12px;position:absolute;top:50%;left:0;margin-top:-6px;overflow: hidden;background:url(../../static/image/sprite.png) -32px -93px no-repeat;}
 .form_wrap .addr_sele select{width:140px;border:1px solid #D3D3D3;padding:10px 0;height:38px;background:#ffffff;padding-left:14px;vertical-align:middle;}
 .form_wrap .form_list textarea{border:1px solid #D3D3D3;background:#ffffff;resize: none;width:590px;height:130px;padding:5px;}
-.form_wrap .form_list textarea.t_w_800{width:800px;height:190px;}
+.form_wrap .form_list textarea.t_w_800{width:400px;height:190px;}
 
 .mask{
     overflow:hidden;

@@ -1,4 +1,4 @@
-package com.zwxpay.demo;
+package com.zwxpay.demo.servlets;
 
 /**
  * Created by zhangmeng on 16-7-1.

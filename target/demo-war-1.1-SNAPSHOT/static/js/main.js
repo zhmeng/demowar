@@ -22,12 +22,12 @@ require.config({
         underscore: 'thrid/underscore',
         backbone: 'thrid/backbone',
         text: 'thrid/text',
-        common: 'lib/common'
+        common: 'libs/common'
     }
 });
 require([
-    'jquery', 'backbone', 'views/order','routers/router'
-], function ($, Backbone, AppView, Workspace) {
+    'business/app','jquery', 'backbone', 'common'
+], function (App, $, Backbone) {
     'use strict';
     var idx = window.location.href.split('#')[1];
     var aList = $('ul li a');
@@ -41,7 +41,5 @@ require([
         $('ul li').removeClass('cur');
         $(e.currentTarget).parent('li').addClass('cur')
     });
-    // Initialize routing and start Backbone.history()
-    var workspace = new Workspace();
-    Backbone.history.start();
+    App.init();
 });
