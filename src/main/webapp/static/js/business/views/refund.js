@@ -17,7 +17,8 @@ define(['backbone', 'text!business/templates/refund.html','text!business/templat
                     self.resultV.remove();
                 }
                 self.resultV = $(self.resultTpl({'result':JSON.stringify(d, null, 4).trim()}));
-                self.$el.append(self.resultV);
+//                self.$el.append(self.resultV);
+                self.$('#testResult').val(JSON.stringify(d, null, 4).trim());
             });
         },
         initialize: function(params){

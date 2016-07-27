@@ -1,42 +1,39 @@
-<div id="refundTest">
-    <div class="ico_title">支付测试(提交信息（扫码支付退款）)</div>
-    <div class="form_wrap account">
-        <div class="form_list">
-            <span class="list_title">商户订单号：</span>
-            <span class="list_val">
-                <input name="out_trade_no" value="">
-            </span>
-        </div>
-        <div class="form_list">
-            <span class="list_title">平台订单号：</span>
-            <span class="list_val">
-                <input name="transaction_id" value="">
-            </span>
-        </div>
-        <div class="form_list">
-            <span class="list_title">商户退款单号：</span>
-            <span class="list_val">
-                <input name="out_refund_no" value="<%=refundNum%>">
-            </span>
-            <i>*</i>
-        </div>
-        <div class="form_list">
-            <span class="list_title">总金额：</span>
-            <span class="list_val">
-                <input name="total_fee" value="1" placeholder="单位：分">
-            </span>
-            <i>*</i><em>单位：分 整型</em>
-        </div>
-        <div class="form_list">
-            <span class="list_title">退款金额：</span>
-            <span class="list_val">
-                <input name="refund_fee" value="1" placeholder="单位：分">
-            </span>
-            <i>*</i><em>单位：分 整型</em>
-        </div>
-        <div class="form_list">
-            <span class="list_title"></span>
-            <span class="list_val submit btn btn_blue" id="refundBtn">确定</span>
-        </div>
+<div class="right" id="refundTest">
+	<div class="content_title">
+       	<h2>支付测试</h2>
+        <span>提交测试信息，扫码支付退款</span>
     </div>
+    <div class="pe_order">
+    	<div class="pe_nuber">
+            <label>商户订单号</label>
+            <input name="out_trade_no" value="">
+        </div>
+        <div class="pe_nuber">
+            <label>平台订单号</label>
+            <input name="transaction_id" value="">
+        </div>
+        <div class="pe_nuber">
+            <label>商户退款单号</label>
+            <input name="out_refund_no" value="<%=refundNum%>">
+        </div>
+        <div class="pe_nuber">
+            <label>总金额</label>
+            <input name="total_fee" value="1" placeholder="单位：分">
+            <span>*</span>&nbsp;&nbsp;&nbsp;单位：分 整型 
+        </div>
+        <div class="pe_nuber">
+            <label>退款金额</label>
+            <input name="refund_fee" value="1" placeholder="单位：分">
+            <span>*</span>&nbsp;&nbsp;&nbsp;单位：分 整型 
+        </div>
+        <input type="submit" class="button" id="refundBtn"  value="确定" />
+    </div>
+    <!-- 测试结果显示开始-->
+    <div class="xt"></div>
+    <div class="result">
+        <label>测试结果</label>
+        <textarea name="MSG" id="testResult" cols=100 rows=8></textarea>
+        <span></span>
+    </div>            
+    <!-- 测试结果显示结束-->
 </div>

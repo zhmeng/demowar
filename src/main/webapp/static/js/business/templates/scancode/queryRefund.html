@@ -1,33 +1,33 @@
-<div id="queryRefund">
-    <div class="ico_title">支付测试(提交信息（扫码支付退款查询）)</div>
-    <div class="form_wrap account">
-        <div class="form_list">
-            <span class="list_title">商户订单号：</span>
-            <span class="list_val">
-                <input name="out_trade_no" value="">
-            </span>
-        </div>
-        <div class="form_list">
-            <span class="list_title">平台订单号：</span>
-            <span class="list_val">
-                <input name="transaction_id" value="">
-            </span>
-        </div>
-        <div class="form_list">
-            <span class="list_title">商户退款单号：</span>
-            <span class="list_val">
-                <input name="out_refund_no" value="">
-            </span>
-        </div>
-        <div class="form_list">
-            <span class="list_title">平台退款单号：</span>
-            <span class="list_val">
-                <input name="refund_id" value="">
-            </span>
-        </div>
-        <div class="form_list">
-            <span class="list_title"></span>
-            <span class="list_val submit btn btn_blue" id="queryRefundBtn">确定</span>
-        </div>
+<div class="right" id="queryRefund">
+	<div class="content_title">
+       	<h2>支付测试</h2>
+        <span>提交测试信息，扫码支付退款查询</span>
     </div>
+    <div class="pe_order">
+        <div class="pe_nuber">
+            <label>商户订单号</label>
+            <input name="out_trade_no" value="">
+        </div>
+        <div class="pe_nuber">
+            <label>平台订单号</label>
+            <input name="transaction_id" value="">
+        </div>
+        <div class="pe_nuber">
+            <label>商户退款单号</label>
+            <input name="out_refund_no" value="">
+        </div>
+        <div class="pe_nuber">
+            <label>平台退款单号</label>
+            <input name="refund_id" value="">
+        </div>
+        <input class="button" type="submit" id="queryRefundBtn"  value="确定"/>
+    </div>
+    <!-- 测试结果显示开始-->
+    <div class="xt"></div>
+    <div class="result">
+        <label>测试结果</label>
+        <textarea name="MSG" id="testResult" cols=100 rows=8></textarea>
+        <span></span>
+    </div>
+    <!-- 测试结果显示结束-->
 </div>

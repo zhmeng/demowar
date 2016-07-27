@@ -19,7 +19,8 @@ define(['backbone', 'text!business/templates/scancode/order.html', 'text!busines
                 }
                 self.resultV = $(self.resultTpl({'result':JSON.stringify(d, null, 4).trim()}));
                 self.resultV.append($('<div style="font-style: italic;color: red;">请复制code_img_url到浏览器新窗口扫描</div>'));
-                self.$el.append(self.resultV);
+//                self.$el.append(self.resultV);
+                self.$('#testResult').val(JSON.stringify(d, null, 4).trim());
             });
         },
         initialize: function(params){

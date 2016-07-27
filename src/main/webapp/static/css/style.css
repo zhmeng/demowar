@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+html { font-size:62.5%;-webkit-font-smoothing:antialiased;}
+body { text-align:center;font-family:"微软雅黑","Microsoft YaHei","Helvetica Neue",Helvetica,STHeiTi,sans-serif;min-height:100%; -webkit-text-size-adjust:none; font-size:1rem;background:#f6f6f8;-webkit-user-select:none; position:relative;}
+* { margin:0; padding:0;list-style:none;  }
+html,body{width:100%;margin:0 auto; padding:0;margin:0;background-color:#fff;}
+
+a{ text-decoration:none; border:0;}
+a:hover{ text-decoration:none; border:0;}
+img a{border:0;}
+input[type="button"], input[type="submit"], input[type="date"],input,textarea {-webkit-appearance: none; font-family:"微软雅黑"; font-weight:normal; overflow:hidden;}
+input,textarea {-webkit-appearance: none; font-family:"微软雅黑"; font-weight:normal;border:0;word-wrap:break-word;word-break:break-all;}
+/***借口测试***/
+.top{width:100%;height:40px; position:relative; overflow:hidden;background:#202020;}
+.logo{width:1024px;height:40px;margin:0 auto;background:url(../image/logo.png) no-repeat left 7px;}
+.main{width:1024px;margin:0 auto; position:relative; overflow:hidden;}
+.left{width:162px;height:100%;margin-top:10px;background:#4876b1;position:absolute;}
+.left ul li{text-align:left; list-style-type:none; line-height:40px; margin-left:10px; font-size:13px;}
+.left ul li a{color:#dae4ef;}
+.left ul li a:hover{color:#fff;}
+.left ul li.cur{background:url(../image/left_bg.png) no-repeat 132px center;}
+.left ul li.cur a{color:#fff;font-size:14px; font-weight:bold;}
+.right{width:852px;height:auto;margin-top:10px; overflow:hidden;float:right; border:1px solid #ececec;}
+.content_title{margin-left:30px; border-bottom:1px solid #ececec; text-align:left;padding:10px 0; line-height:25px;}
+.content_title h2{color:#2e5f9d;font-size:16px; font-weight:normal;}
+.content_title span{color:#888; font-size:13px;}
+.pe_order{margin-left:30px;text-align:left;padding:20px 40px; line-height:25px;color:#999;font-size:13px;}
+.pe_order input{border:1px solid #bbb; width:200px; height:30px; margin:0 15px 0 25px;}
+.pe_order textarea{border:1px solid #bbb; width:200px; height:60px; margin:0 15px 0 25px;}
+.pe_nuber{height:45px;}
+.pe_msg{height:75px;}
+.pe_order label{color:#000; width:80px; display:block; float:left; text-align:right;}
+.pe_nuber span{color:red;}
+.pe_order input.button{width:115px;height:40px;background:#2e5f9d;text-align:center; line-height:40px;color:#fff;font-size:16px; border:0;margin:5px 0 15px 105px;}
+.xt{margin-left:30px;height:1px;background:#ececec;}
+.result{margin-left:30px;padding:20px 40px; text-align:left;}
+.result label{color:#000; width:80px; display:block; float:left; text-align:right; font-size:13px;}
+.result textarea{border:1px solid #bbb; width:595px; height:170px; margin:0 0 0 25px; padding:20px;}
+.bottom{margin-left:162px;font-size:13px;color:#999; text-align:center;margin-top:20px; line-height:25px;}

@@ -1,52 +1,39 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="UTF-8">
     <title>梓微兴Web扫码支付测试页面</title>
-    <link href="static/css/a.css" rel="stylesheet" type="text/css"/>
-    <link href="static/css/b.css" rel="stylesheet" type="text/css"/>
+    <link href="static/css/style.css" rel="stylesheet" type="text/css"/>
+<!--     <script type="text/javascript" src="static/js/business/jquery-2.1.0.min.js"></script> -->
+<!--     <script type="text/javascript" src="static/js/libs.js"></script> -->
+<!--     <script type="text/javascript" src="static/js/publicAccount.js"></script> -->
+    <script data-main="static/js/main" src="static/js/thrid/require.js"></script>
 </head>
 <body>
-<div id="pay_platform">
-    <div class="header">
-        <div class="wrap">
-            <div class="logo"><h1 style="background-color: transparent"><a href="javascript:void(0);" title="微信支付商户平台">微信支付商户平台</a></h1></div>
-        </div>
+<div class="top">
+    <div class="logo"></div>
+</div>
+<div class="main menu">
+    <div class="left">
+        <ul>
+            <li class="cur"><a href="#business/views/scancode/order">支付测试</a></li>
+            <li><a href="#business/views/scancode/queryOrder">订单查询测试</a></li>
+            <li><a href="#business/views/scancode/refund">退款测试</a></li>
+            <li><a href="#business/views/scancode/queryRefund">退款查询测试</a></li>
+        </ul>
     </div>
-    <div class="content">
-        <div class="menu">
-            <div class="item">
-                <h5>接口测试</h5>
-                <div class="">
-                    <ul>
-                        <li>
-                            <a href="#business/views/scancode/order">支付测试</a>
-                        </li>
-                        <li>
-                            <a href="#business/views/scancode/queryOrder">订单查询测试</a>
-                        </li>
-                        <li>
-                            <a href="#business/views/scancode/refund">退款测试</a>
-                        </li>
-                        <li>
-                            <a href="#business/views/scancode/queryRefund">退款查询测试</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="auto_center" id="auto_center">
+    <div class="auto_center" id="auto_center">
             <div id="form"></div>
             <div id="result"></div>
         </div>
-    </div><!-- content end -->
 </div>
-<div class="foot">
-    <ul class="links ft">
-        <li class="links_item no_extra">深圳梓微兴科技发展有限公司</li>
-        <li class="links_item"><p class="copyright">深圳市福田区福强路4001号深圳文化创意园F馆3层</p> </li>
-    </ul>
-</div>
-<script data-main="static/js/main" src="static/js/thrid/require.js"></script>
+<div class="bottom">客服电话：(0755) 23991203<br>
+    Copyright © 2016 ZI WEI XING Technology. All Rights Reserved</div>
 </body>
+<script>
+    if(window.location.href.indexOf("#") == -1){
+        window.location.href = (window.location.href + "#business/views/scancode/order");
+    }
+</script>
 </html>

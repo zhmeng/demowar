@@ -30,8 +30,10 @@ define(['backbone'], function(Backbone){
     });
     app.router = new Router();
     app.router.on('route:defaultRoute', function(actions){
-        console.log(actions);
-        app.loadHmtlByJs(actions);
+        if(actions != undefined && actions != null){
+            console.log(actions);
+            app.loadHmtlByJs(actions);
+        }
     });
     Backbone.history.start();
     return app;
